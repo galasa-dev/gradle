@@ -5,8 +5,9 @@
 # Objectives: Build this repository code locally.
 #
 # Environment variable over-rides:
-# LOGS_DIR - Optional. Where logs are placed.
+# LOGS_DIR - Optional. Where logs are placed. Defaults to creating a temporary directory.
 # SOURCE_MAVEN - Optional. Where a maven repository is from which the build will draw artifacts.
+# DEBUG - Optional. Defaults to 0 (off)
 # 
 #-----------------------------------------------------------------------------------------                   
 
