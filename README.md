@@ -30,6 +30,7 @@ To use the Gradle OBR plugin in a Gradle test project:
         ...
     }
     ```
+    This applies the OBR plugin to the OBR subproject and specifies the bundles to be included in the OBR that will be built. It also defines the repositories that Gradle will search within to resolve dependencies and applies the `java` plugin to enable Java compilation, testing, and build features.
 
 2. Create a `settings.gradle` file in your project's root directory with the following contents:
    
@@ -47,6 +48,9 @@ To use the Gradle OBR plugin in a Gradle test project:
 
     include 'com.example.tests.obr' // This must match the name of your OBR project directory.
     ```
+
+    This defines the repositories that Gradle will search to find requested plugins. It also includes the OBR subproject in Gradle builds.
+
     If you would like to give your OBR subproject a different name, you can create a `settings.gradle` file in your OBR directory containing the following line:
     
     ```groovy
@@ -57,7 +61,7 @@ To use the Gradle OBR plugin in a Gradle test project:
 
 3. Run `gradle build` to build the OBR.
 
-To verify that the OBR was successfully built, A `build` directory will appear in your OBR directory and within it, a `galasa.obr` file should be present.
+    To verify that the OBR was successfully built, A `build` directory will appear in your OBR directory and within it, a `galasa.obr` file should be present.
 
 ## To Build locally
 Use the `.build-locally.sh` script to invoke a build.
