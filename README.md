@@ -15,6 +15,14 @@ To use the Gradle OBR plugin in a Gradle test project:
         id 'dev.galasa.obr' version '0.15.0'
     }
 
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven {
+            url = 'https://development.galasa.dev/prod/maven-repo/obr'
+        }
+    }
+
     // Here, all OSGi Bundles to be included in the OBR must be listed using the 'bundle' configuration
     dependencies {
         bundle project(':com.example.tests.manager')
