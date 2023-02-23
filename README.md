@@ -27,7 +27,6 @@ To use the Gradle OBR plugin in a Gradle test project:
     dependencies {
         bundle project(':com.example.tests.manager')
         bundle project(':com.example.tests.mytests')
-        ...
     }
     ```
     This applies the OBR plugin to the OBR subproject and specifies the bundles to be included in the OBR that will be built. It also defines the repositories that Gradle will search within to resolve dependencies and applies the `java` plugin to enable Java compilation, testing, and build features.
@@ -46,7 +45,7 @@ To use the Gradle OBR plugin in a Gradle test project:
         }
     }
 
-    include 'com.example.tests.obr' // This must match the name of your OBR project directory.
+    include 'com.example.tests.obr' // This must match the name of your OBR subproject.
     ```
 
     This defines the repositories that Gradle will search to find requested plugins. It also includes the OBR subproject in Gradle builds.
