@@ -71,6 +71,8 @@ tasks.withType(Sign) {
 publishing {
     afterEvaluate {
         publications {
+            pluginMaven(MavenPublication) {
+            }
             withType(MavenPublication) {
                 pom {
                     url = 'https://galasa.dev'
