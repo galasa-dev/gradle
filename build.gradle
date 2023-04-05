@@ -77,8 +77,8 @@ publishing {
             withType(MavenPublication) {
                 pom {
                     url = 'https://galasa.dev'
-                    name = 'A Galasa project'
-                    description = 'A Galasa project'
+                    name = 'Galasa Gradle Plugins'
+                    description = 'This project contains the Galasa Gradle plugins'
                     licenses {
                         license {
                             name = 'Eclipse Public License - v 2.0'
