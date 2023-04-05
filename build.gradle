@@ -73,6 +73,7 @@ publishing {
         publications {
             pluginMaven(MavenPublication) {
             }
+
             withType(MavenPublication) {
                 pom {
                     url = 'https://galasa.dev'
