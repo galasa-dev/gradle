@@ -21,7 +21,7 @@ gradle-app.setting
 .project
 .classpath
 
-.DS_Store
+.**/.DS_Store
 .vscode/
 
 *.phd
