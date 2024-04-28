@@ -23,6 +23,9 @@ gradle-app.setting
 .project
 .classpath
 
+.**/.DS_Store
+.vscode/
+
 *.phd
 *.dmp
 velocity.log*
