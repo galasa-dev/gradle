@@ -18,7 +18,7 @@ jobs:
               uses: actions/setup-java@v4
               with:
                 java-version: '11'
-                distribution: 'temurin'
+                distribution: 'semeru'
 
             - name: Setup Gradle
               uses: gradle/actions/setup-gradle@v3
@@ -27,14 +27,8 @@ jobs:
 
             - name: Test and Build Gradle
               run: |
-               gradle check publish \
+               gradle clean build \
                -PsourceMaven=https://repo.maven.apache.org/maven2/  \
                -PcentralMaven=https://repo.maven.apache.org/maven2/ \
                -PtargetMaven=https://maven.pkg.github.com/galasa-dev/gradle/
-
-
-        
-
-
-            
-            
+          
